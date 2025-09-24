@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile Page</title>
+</head>
+<body>
+  <h1 id="profileHeader">Profile Page</h1>
+  <button id="actionBtn">Click Me</button>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name") || "Unknown";
+    const profile = params.get("profile") || "1";
+    document.getElementById("profileHeader").innerText = `${name}'s Profile ${profile}`;
+  </script>
+</body>
+</html>

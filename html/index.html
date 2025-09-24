@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo: Open Three Tabs</title>
+  <script>
+    function openThreeTabs() {
+      window.open("https://the-internet.herokuapp.com", "_blank");
+      window.open("https://saucedemo.com", "_blank");
+      window.open("https://reqres.in", "_blank");
+      window.close(); // closes the parent tab
+    }
+  </script>
+</head>
+<body>
+  <h1>Test: One Click → Opens 3 Tabs (Parent closes)</h1>
+  <button id="openThree" onclick="openThreeTabs()">Open Three Tabs</button>
+</body>
+</html>
