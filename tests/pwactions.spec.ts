@@ -2,7 +2,7 @@ import{test,expect,Locator} from '@playwright/test';
 test("Verifying Input actions ",async ({page})=>{
 await page.goto('/');
 const firstName:Locator =  page.locator('#name')
-firstName.fill("asdfg");
+await firstName.fill("asdfg");
 await expect(firstName).toBeVisible();
 const maxLengthAttr:string | null = await firstName.getAttribute("maxlength");
 

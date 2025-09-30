@@ -31,6 +31,7 @@ export default defineConfig({
     // baseURL:"https://www.flipkart.com",
     // baseURL:"https://opensource-demo.orangehrmlive.com",
     //   baseURL:"https://demowebshop.tricentis.com",
+     baseURL:"https://restful-booker.herokuapp.com",
 
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -38,6 +39,8 @@ export default defineConfig({
     screenshot:'on',
 
     // You already have trace config, keep it
+
+    // Add ESLint rule configuration
     trace: 'retain-on-failure',
 
     // Optional: record video too
