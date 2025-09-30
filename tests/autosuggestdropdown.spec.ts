@@ -1,5 +1,5 @@
 import{test,expect,Locator} from '@playwright/test';
-test("Auto suggest dropdown",async({page})=>{
+test("@regression, Auto suggest dropdown",async({page})=>{
    await page.goto("/");
    const inputBox:Locator = page.locator("input[name='q']");
    await inputBox.fill("smart");

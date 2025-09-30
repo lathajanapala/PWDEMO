@@ -1,6 +1,6 @@
 import{test,expect,Locator}from '@playwright/test';
 
-test("Verify Chrome CPU in dynamic webtable",async({page})=>{
+test("@smok,@regression,Verify Chrome CPU in dynamic webtable",async({page})=>{
     await page.goto("/");
     const table:Locator= page.locator("table[id='taskTable']")
 

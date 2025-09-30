@@ -1,5 +1,5 @@
 import{test, expect, chromium} from '@playwright/test';
-test("browser context page demo",async()=>{
+test("@regression,browser context page demo",async()=>{
     const browser = await chromium.launch();
     const context = await browser.newContext();
     const parentPage= await context.newPage();
