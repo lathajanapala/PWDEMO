@@ -5,7 +5,8 @@ pipeline {
       args '-u root'
     }
   }
-  triggers { cron('30 23 * * *') } // Runs every day at 23:30 (server timezone)
+  // Updated to run at 11:30 PM Central Time (America/Chicago)
+  triggers { cron('TZ=America/Chicago\n30 23 * * *') } // 23:30 CT daily
   options {
     timeout(time: 30, unit: 'MINUTES')
     ansiColor('xterm')
